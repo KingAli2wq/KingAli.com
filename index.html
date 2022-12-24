@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ali</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to <span id="name"></span>'s Website!</h1>
+  </header>
+  <main>
+    <main>
+      <h2>Featured Image</h2>
+      <img src="images/Nitro_Wallpaper_5000x2813.jpg" alt="A beautiful landscape">
+      <p>This is an example of how you can add an image to a website.</p>
+    </main>
+    <p>This is a simple website that displays a customizable name.</p>
+    <form>
+      <label for="name-input">Enter your name:</label><br>
+      <input type="text" id="name-input"><br>
+      <button type="button" onclick="updateName()">Update Name</button>
+    </form>
+  </main>
+  <footer>
+    <p>Copyright 2021 My Website</p>
+  </footer>
+  <script>
+    function updateName() {
+      // get the user's name from the input field
+      var name = document.getElementById("name-input").value;
+      // update the name on the page
+      document.getElementById("name").innerHTML = name;
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn to Code</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Learn to Code</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+        <li><a href="#exercises">Exercises</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>Welcome to Learn to Code!</h2>
+      <p>We're here to help you learn the fundamentals of programming and start building your own projects.</p>
+    </section>
+    <section id="lessons">
+      <h2>Lessons</h2>
+      <ul>
+        <li><a href="#">Lesson 1: Introduction to HTML</a></li>
+        <li><a href="#">Lesson 2: Introduction to CSS</a></li>
+        <li><a href="#">Lesson 3: Introduction to JavaScript</a></li>
+      </ul>
+    </section>
+    <section id="exercises">
+      <h2>Exercises</h2>
+      <ul>
+        <li><a href="#">Exercise 1: HTML Syntax</a></li>
+        <li><a href="#">Exercise 2: CSS Selectors</a></li>
+        <li><a href="#">Exercise 3: JavaScript Variables</a></li>
+      </ul>
+    </section>
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="#">HTML Reference</a></li>
+        <li><a href="#">CSS Reference</a></li>
+        <li><a href="#">JavaScript Reference</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2021 Learn to Code</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Element Reference</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HTML Element Reference</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Heading Elements</h2>
+      <dl>
+        <dt>h1</dt>
+        <dd>Defines the most important heading of a document or section</dd>
+        <dt>h2</dt>
+        <dd>Defines a secondary heading of a document or section</dd>
+        <dt>h3</dt>
+        <dd>Defines a tertiary heading of a document or section</dd>
+        <!-- more heading elements -->
+      </dl>
+    </section>
+    <section>
+      <h2>Paragraph Elements</h2>
+      <dl>
+        <dt>p</dt>
+        <dd>Defines a paragraph of text</dd>
+        <!-- more paragraph elements -->
+      </dl>
+    </section>
+    <!-- more sections for other types of elements -->
+  </main>
+  <footer>
+    <p>Copyright 2021 Learn to Code</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Coding Quiz</h1>
+  </header>
+  <main>
+    <form>
+      <h2>Question 1</h2>
+      <p>What is the correct syntax for an HTML heading element?</p>
+      <input type="radio" name="q1" value="A">&lt;head&gt;<br>
+      <input type="radio" name="q1" value="B">&lt;h1&gt;<br>
+      <input type="radio" name="q1" value="C">&lt;heading&gt;<br>
+      <input type="radio" name="q1" value="D">&lt;title&gt;<br>
+      <h2>Question 2</h2>
+      <p>Which of the following is a CSS property for changing the font of an element?</p>
+      <input type="radio" name="q2" value="A">font-type<br>
+      <input type="radio" name="q2" value="B">font-size<br>
+      <input type="radio" name="q2" value="C">font-color<br>
+      <input type="radio" name="q2" value="D">font-style<br>
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <p>Copyright 2021 Learn to Code</p>
+  </footer>
+  <script>
+    function checkAnswers() {
+      // get the user's answers
+      var q1 = document.querySelector('input[name="q1"]:checked').value;
+      var q2 = document.querySelector('input[name="q2"]:checked').value;
+      // check the answers
+      var correct = 0;
+      if (q1 == "B") { correct++; }
+      if (q2 == "D") { correct++; }
+      // show the results
+      alert("You got " + correct + " out of 2 questions correct!");
+    }
+  </script>
+  <p>hey wsp stupids this is my website i'm still learning tho</p>
+</body>
+</html>
